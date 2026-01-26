@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className='md:flex flex-col justify-around items-center hidden'>
             <div className='h-11 w-11 rounded-full overflow-hidden hover:scale-110 transition-all duration-200 cursor-pointer'>
-                <Image className='w-full h-full' src={logo} />
+                <Image className='w-full h-full' src={logo} alt='logo' />
             </div>
             <div className='flex items-center flex-col gap-20 text-[16px] leading-[100%] text-black font-medium'>
                 <button className='-rotate-90 opacity-80 hover:opacity-100'>Home</button>
