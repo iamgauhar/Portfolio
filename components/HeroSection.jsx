@@ -7,7 +7,6 @@ const HeroSection = () => {
     return (
         <div className='grid place-content-center h-screen'>
             <div className='text-[clamp(14px,2.2vw,22px)] font-medium text-black/60 tracking-wider h-11 pb-3'>
-                {/* MOHAMMAD GAUHAR */}
                 <DecoderText text={"MOHAMMAD GAUHAR"} delay={500} />
             </div>
             <motion.div
@@ -20,7 +19,7 @@ const HeroSection = () => {
                     <motion.div
                         initial={{ scaleX: 0 }}
                         animate={{ scaleX: 1 }}
-                        transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+                        transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                         style={{ transformOrigin: "left" }}
                         className="md:h-0.5 h-[1px] bg-black/30 w-full max-w-72"
                     />
