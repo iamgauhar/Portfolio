@@ -72,7 +72,7 @@ export const skills = {
     { name: "Figma", Icon: FigmaIcon, color: "#F24E1E" },
     { name: "Trello", Icon: SiTrello, color: "#0052CC" },
     { name: "Slack", Icon: SiSlack, color: "#4A154B" },
-    { name: "Microsoft Teams", Icon: PiMicrosoftTeamsLogoFill, color: "#6264A7" },
+    { name: "Teams", Icon: PiMicrosoftTeamsLogoFill, color: "#6264A7" },
     { name: "Google Workspace", Icon: SiGoogle, color: "#4285F4" },
 
   ],
@@ -98,7 +98,7 @@ export const education = [
   {
     course: "Computer Application",
     degree: "Bachelor's",
-    university: "Makhanlal Chaturvedi National University, Bhopal",
+    university: "Makhanlal Chaturvedi National University",
     duration: "Aug 2019 - Jun 2022",
     logo: mcu
   },

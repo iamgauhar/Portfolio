@@ -22,6 +22,25 @@ button {
   cursor: pointer;
 }
 
+.animated-gradient {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #a8edea 100%);
+  background-size: 200% 200%;
+  animation: animated-gradient-wave 7s ease-in-out infinite;
+}
+
+
+@keyframes animated-gradient-wave {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
 
 /* @media (prefers-color-scheme: dark) {
   html {
