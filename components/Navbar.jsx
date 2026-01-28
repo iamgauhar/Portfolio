@@ -7,8 +7,8 @@ import logo from "../assets/MG_W.jpg"
 
 const Navbar = () => {
     return (
-        <div className='h-full py-15'>
-            <div className='md:flex flex-col justify-between items-center hidden border border-white bg-white/40 w-fit h-full mx-auto rounded-[30px] pt-2.5 pb-4'>
+        <div className='h-full py-15 hidden md:block'>
+            <div className='md:flex flex-col justify-between items-center border border-white bg-white/40 w-fit h-full mx-auto rounded-[30px] pt-2.5 pb-4'>
                 <div className='h-11 w-11 rounded-full overflow-hidden hover:scale-110 transition-all duration-200 cursor-pointer'>
                     <Image className='w-full h-full' src={logo} alt='logo' />
                 </div>
