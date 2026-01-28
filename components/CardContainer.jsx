@@ -10,7 +10,7 @@ const CardContainer = ({ children }) => {
             transition={{ duration: 1.2, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
         >
-            <div className="border border-[#CAD9EC] rounded-3xl bg-white">
+            <div className="border border-[#ffffff] rounded-3xl bg-white/40">
                 {children}
             </div>
         </motion.div>

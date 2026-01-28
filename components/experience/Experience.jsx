@@ -7,7 +7,7 @@ import { experience } from '@/app/myBio'
 const ExpCard = ({ exp }) => {
     return (
         <CardContainer>
-            <div className="p-7.5 grid gap-4">
+            <div className="p-7 pb-8 grid gap-4">
                 <div>
                     <div className="md:h-13.75 h-10 md:w-13.75 w-10 rounded-full object-cover">
                         <Image

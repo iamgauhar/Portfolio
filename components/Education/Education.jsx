@@ -7,7 +7,7 @@ import { education } from '@/app/myBio'
 const EduCard = ({ edu }) => {
     return (
         <CardContainer>
-            <div className='p-4 flex flex-col gap-4'>
+            <div className='p-4 pb-6 flex flex-col gap-4'>
                 <div className="md:h-13 h-10 md:w-13 w-10 rounded-full object-cover"
                     style={{
                         ...(edu.university.includes("Masai") && { background: "black", padding: "6px" })
