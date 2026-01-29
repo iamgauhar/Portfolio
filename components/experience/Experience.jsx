@@ -18,12 +18,12 @@ const ExpCard = ({ exp }) => {
                     </div>
 
                     {/* Role */}
-                    <div className="font-medium text-[clamp(14px,1.8vw,16px)] leading-tight text-[#0A0614] pt-1.25">
+                    <div className="font-medium text-[clamp(14px,1.8vw,18px)] leading-tight text-[#0A0614] pt-2">
                         {exp.role}
                     </div>
 
                     {/* Org + Duration */}
-                    <div className="font-medium text-[clamp(13px,1.7vw,16px)] leading-tight text-[#6A6F8E] flex items-center gap-2">
+                    <div className="font-medium text-[clamp(13px,1.7vw,15px)] leading-tight text-[#6A6F8E] flex items-center gap-2">
                         {exp.orgName}
                         <span className="font-light text-[clamp(10px,1.4vw,12px)] pt-0.5">|</span>
                         {exp.duration}

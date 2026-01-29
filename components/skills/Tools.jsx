@@ -13,7 +13,7 @@ const Tools = () => {
                     {
                         skills.tools.map(({ name, Icon, color }, i) => {
                             return <div key={name} className="flex items-center flex-col gap-1">
-                                <div className='h-13.75 w-13.75 rounded-full grid place-content-center border border-[#CAD9EC]'> <Icon size={25} color={color} /></div>
+                                <div className='h-13.75 w-13.75 rounded-full grid place-content-center bg-white/30 border border-[#ffffffaa]'> <Icon size={25} color={color} /></div>
                                 <span className="text-[14px] leading-[120%] font-light truncate text-[#0A0614]/80">{name}</span>
                             </div>
                         })
