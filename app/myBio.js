@@ -28,9 +28,11 @@ import {
   SiSlack,
   SiGoogle,
   SiJsonwebtokens,
+
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { PiMicrosoftTeamsLogoFill } from "react-icons/pi";
+import { LuUtensilsCrossed } from "react-icons/lu";
 
 const FigmaIcon = () => {
   return (
@@ -90,6 +92,22 @@ export const experience = [
       "Built and integrated complex admin settings features, including a custom sign-up form, an announcement system, and the corresponding back-end APIs.",
       "Used AWS (EC2/S3) for deployment and asset storage tasks where required.",
       "Collaborated closely with the UI/UX team to convert design wireframes into responsive, production-ready interfaces and maintain consistency across all frontend modules."
+    ]
+  }
+]
+
+export const projects = [
+  {
+    "name": "ShareChef",
+    "about": "A real-time collaborative web application that allows groups to securely pool ingredients and use AI to generate and vote on custom recipes based on strict dietary constraints.",
+    "logo": LuUtensilsCrossed,
+    "techStack": "Next.js, React, Tailwind CSS, MongoDB, Pusher (WebSockets), NextAuth, Llama 3.3 AI",
+    "desc": [
+      "Engineered a real-time collaborative frontend using Next.js and Pusher WebSockets, enabling multiple users to seamlessly add ingredients and cast votes in live shared rooms with zero-latency optimistic UI updates.",
+      "Integrated Llama 3.3 AI via Groq to dynamically generate structured, personalized recipes based on crowd-sourced ingredients, engineering prompt logic to strictly enforce user-defined dietary restrictions, allergies, and time limits.",
+      "Developed a secure, role-based routing system utilizing NextAuth (Google OAuth) and MongoDB, implementing smart authorization checks to bypass redundant password screens for room hosts while securely gating guest access.",
+      "Optimized data fetching and serialization between the MongoDB backend and Next.js frontend by utilizing Mongoose queries, eliminating heavy document bottlenecks and ensuring instant state synchronization for live voting.",
+      "Designed a highly responsive, modern UI with Tailwind CSS and Lucide icons, focusing on intuitive user experiences like dynamic host-only controls, real-time vote count badges, and animated view transitions."
     ]
   }
 ]

@@ -4,6 +4,7 @@ import Experience from '@/components/experience/Experience'
 import Footer from '@/components/Footer'
 import HeroSection from '@/components/HeroSection'
 import Navbar from '@/components/Navbar'
+import Project from '@/components/Projects/Project'
 import Skills from '@/components/skills/Skills'
 import Tools from '@/components/skills/Tools'
 import SmoothToggleBtn from '@/components/SmoothToggleBtn'
@@ -26,6 +27,7 @@ const HomePage = () => {
                 </div>
                 <div className='grid gap-7.5 h-fit'>
                     <Experience />
+                    <Project />
                     <Education />
                 </div>
                 <div className='grid gap-7.5 h-fit'>
