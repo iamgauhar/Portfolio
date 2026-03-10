@@ -10,7 +10,7 @@ const AppShell = ({ children }) => {
   return (
     <div className="grid md:grid-cols-[140px_auto] gap-3 h-screen animated-gradient">
       <SmoothToggleBtn {...{ toggle, setToggle }} />
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle} setToggle={setToggle} />
       {children}
     </div>
   );

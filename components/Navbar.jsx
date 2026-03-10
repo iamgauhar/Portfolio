@@ -5,7 +5,11 @@ import { FiGithub, FiLinkedin, } from "react-icons/fi";
 import { RiTwitterXFill } from 'react-icons/ri'
 import logo from "../assets/MG_W.jpg"
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, setToggle }) => {
+    const closeMobileNavbar = () => {
+        setToggle?.(false)
+    }
+
     return (
         <div className={`
     h-full py-15 fixed inset-0 z-40 pl-4
@@ -16,22 +20,22 @@ const Navbar = ({ toggle }) => {
     md:bg-transparent md:backdrop-blur-none md:block
   `}>
             <div className='flex flex-col justify-between items-center border border-white bg-white/40 w-fit h-full md:mx-auto rounded-[30px] pt-2.5 pb-4'>
-                <div className='h-11 w-11 rounded-full overflow-hidden hover:scale-110 transition-all duration-200 cursor-pointer'>
+                <Link href={"/"} onClick={closeMobileNavbar} className='h-11 w-11 rounded-full overflow-hidden hover:scale-110 transition-all duration-200 cursor-pointer block'>
                     <Image className='w-full h-full' src={logo} alt='logo' />
-                </div>
+                </Link>
                 <div className='flex items-center flex-col gap-20 text-[16px] leading-[100%] text-black font-medium'>
-                    <Link className='-rotate-90 opacity-80 hover:opacity-100' href={"/"}>Home</Link>
-                    <Link className='-rotate-90 opacity-80 hover:opacity-100' href={"/resume"}>Resume</Link>
-                    <Link className='-rotate-90 opacity-80 hover:opacity-100' href={"mailto:iamgauhar.in@gmail.com"}>Contact</Link>
+                    <Link onClick={closeMobileNavbar} className='-rotate-90 opacity-80 hover:opacity-100' href={"/"}>Home</Link>
+                    <Link onClick={closeMobileNavbar} className='-rotate-90 opacity-80 hover:opacity-100' href={"/resume"}>Resume</Link>
+                    <Link onClick={closeMobileNavbar} className='-rotate-90 opacity-80 hover:opacity-100' href={"mailto:iamgauhar.in@gmail.com"}>Contact</Link>
                 </div>
                 <div className='flex flex-col items-center gap-5'>
-                    <Link href={"https://github.com/iamgauhar"} target='_blank' className='opacity-80 hover:opacity-100'>
+                    <Link onClick={closeMobileNavbar} href={"https://github.com/iamgauhar"} target='_blank' className='opacity-80 hover:opacity-100'>
                         <FiGithub size={24} />
                     </Link>
-                    <Link href={"https://www.linkedin.com/in/iamgauhar"} target='_blank' className='opacity-80 hover:opacity-100'>
+                    <Link onClick={closeMobileNavbar} href={"https://www.linkedin.com/in/iamgauhar"} target='_blank' className='opacity-80 hover:opacity-100'>
                         <FiLinkedin size={24} />
                     </Link>
-                    <Link href={"https://x.com/iamgauhar_in"} target='_blank' className='opacity-80 hover:opacity-100'>
+                    <Link onClick={closeMobileNavbar} href={"https://x.com/iamgauhar_in"} target='_blank' className='opacity-80 hover:opacity-100'>
                         <RiTwitterXFill size={24} />
                     </Link>
                 </div>
