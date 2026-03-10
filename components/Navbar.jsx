@@ -20,8 +20,8 @@ const Navbar = ({ toggle }) => {
                     <Image className='w-full h-full' src={logo} alt='logo' />
                 </div>
                 <div className='flex items-center flex-col gap-20 text-[16px] leading-[100%] text-black font-medium'>
-                    <button className='-rotate-90 opacity-80 hover:opacity-100'>Home</button>
-                    <button className='-rotate-90 opacity-80 hover:opacity-100'>About</button>
+                    <Link className='-rotate-90 opacity-80 hover:opacity-100' href={"/"}>Home</Link>
+                    <Link className='-rotate-90 opacity-80 hover:opacity-100' href={"/resume"}>Resume</Link>
                     <button className='-rotate-90 opacity-80 hover:opacity-100'>Contact</button>
                 </div>
                 <div className='flex flex-col items-center gap-5'>
